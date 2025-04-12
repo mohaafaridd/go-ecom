@@ -1,0 +1,9 @@
+curl --location 'http://localhost:8080/api/v1/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Shirt",
+    "description": "A long sleeved shirt",
+    "price": 150.5,
+    "quantity": 10,
+    "image":"shirt.jpg"
+}'
