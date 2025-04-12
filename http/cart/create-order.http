@@ -1,0 +1,15 @@
+curl --location 'http://localhost:8080/api/v1/cart/checkout' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkQXQiOjE3NDUwMzQzMjQsInVzZXJJZCI6IjIifQ.ta9O7poZqov5aWwRb5Hj6lMugnrvcev39OFMIgOrw2s' \
+--data '{
+    "items": [
+        {
+            "productId": 1,
+            "quantity": 3
+        },
+        {
+            "productId": 2,
+            "quantity": 3
+        }
+    ]
+}'
